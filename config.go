@@ -3,8 +3,8 @@ package cas_connector
 import (
 	"encoding/json"
 
-	"github.com/apache/answer-plugins/cas-connector/i18n"
 	"github.com/apache/answer/plugin"
+	"github.com/nizil/answer-plugin-cas/i18n"
 )
 
 // ConnectorConfig is persisted by Answer (as JSON) whenever an admin saves

@@ -5,7 +5,7 @@ plugin:
         name:
           other: CAS Connector
         description:
-          other: Hello World CasConnector Plugin
+          other: Connector plugin for login through CAS
       config:
         server_url:
           title:
