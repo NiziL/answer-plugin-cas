@@ -1,14 +1,5 @@
-# CasConnector Plugin
+# CAS Connector for Apache Answer
 
-This is a connector type plugin.
+This is a connector type plugin handling login through CAS.
 
-## Installation
-
-```bash
-# Install the plugin
-answer-plugin install cas-connector
-```
-
-## Development
-
-See the plugin documentation for development instructions.
+~~Winter~~ Documentation is coming.
