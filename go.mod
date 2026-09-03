@@ -1,4 +1,4 @@
-module github.com/apache/answer-plugins/cas-connector
+module github.com/nizil/answer-plugin-cas
 
 go 1.23.0
 
