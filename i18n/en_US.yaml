@@ -12,3 +12,9 @@ plugin:
             other: Server URL
           description:
             other: The URL of the CAS server to connect to.
+        display_name:
+          title:
+            other: CAS
+          description:
+            other: >-
+              Optional. The label of the CAS login button, shown as "Connect with <this text>".

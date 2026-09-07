@@ -50,6 +50,13 @@ func (c *CasConnector) ConnectorLogoSVG() string {
 
 // ConnectorName returns the name of the connector
 func (c *CasConnector) ConnectorName() plugin.Translator {
+	if name := strings.TrimSpace(c.Config.DisplayName); name != "" {
+		return plugin.Translator{
+			Fn: func(ctx *plugin.GinContext) string {
+				return name
+			},
+		}
+	}
 	return plugin.MakeTranslator(i18n.InfoName)
 }
 

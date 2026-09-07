@@ -10,7 +10,8 @@ import (
 // ConnectorConfig is persisted by Answer (as JSON) whenever an admin saves
 // the plugin's settings page, and reloaded into Connector.Config on startup.
 type CasConnectorConfig struct {
-	ServerURL string `json:"server_url"`
+	ServerURL   string `json:"server_url"`
+	DisplayName string `json:"display_name"`
 }
 
 // ConfigFields describes the settings form shown under
@@ -24,6 +25,17 @@ func (c *CasConnector) ConfigFields() []plugin.ConfigField {
 			Description: plugin.MakeTranslator(i18n.ConfigServerURLDescription),
 			Required:    true,
 			Value:       c.Config.ServerURL,
+			UIOptions: plugin.ConfigFieldUIOptions{
+				InputType: plugin.InputTypeText,
+			},
+		},
+		{
+			Name:        "display_name",
+			Type:        plugin.ConfigTypeInput,
+			Title:       plugin.MakeTranslator(i18n.ConfigDisplayNameTitle),
+			Description: plugin.MakeTranslator(i18n.ConfigDisplayNameDescription),
+			Required:    false,
+			Value:       c.Config.DisplayName,
 			UIOptions: plugin.ConfigFieldUIOptions{
 				InputType: plugin.InputTypeText,
 			},
