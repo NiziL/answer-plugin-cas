@@ -15,7 +15,7 @@ answer build --with github.com/nizil/answer-plugin-cas
 In the `Admin` panel of Answer, within the `Plugins` menu, enable `CAS Connector`.
 
 Then, from the `CAS Connector` configuration page, you must fill the `Server URL` entry with the URL of your CAS server.
-Optionaly, you can provide a `Display Name` to personalize the login button (default to `CAS Connector`).
+Optionaly, you can provide a `Display Name` to personalize the login button (default to `CAS`).
 
 Finaly, you may want to disable new registration and password login from the `Advanced/Login` panel, hence forcing your users to use the CAS login.
 
