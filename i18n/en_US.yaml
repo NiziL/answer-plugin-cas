@@ -17,4 +17,4 @@ plugin:
             other: CAS
           description:
             other: >-
-              Optional. The label of the CAS login button, shown as "Connect with <this text>".
+              Optional. The label of the CAS login button, shown as "Connect with \<this text\>".
